@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l16-zV-hC6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="gY3-wK-Q66">
+            <objects>
+                <viewController id="l16-zV-hC6" customClass="ARViewController" customModule="place3dobject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ojw-Lv-LT1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSx-Lc-a81">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FU-q9-w3n">
+                                <rect key="frame" x="24" y="603" width="90" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sofa"/>
+                                <connections>
+                                    <action selector="sofaButton:" destination="l16-zV-hC6" eventType="touchUpInside" id="4MI-8w-LGA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGX-Q9-WnR">
+                                <rect key="frame" x="276" y="603" width="77" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="lamp"/>
+                                <connections>
+                                    <action selector="lampButton:" destination="l16-zV-hC6" eventType="touchUpInside" id="d9Y-EJ-Iyr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hSx-Lc-a81" firstAttribute="bottom" secondItem="Xab-fJ-sMN" secondAttribute="bottom" id="2QZ-iY-yvm"/>
+                            <constraint firstItem="hSx-Lc-a81" firstAttribute="leading" secondItem="Xab-fJ-sMN" secondAttribute="leading" id="3l3-6e-2bh"/>
+                            <constraint firstItem="hSx-Lc-a81" firstAttribute="trailing" secondItem="Xab-fJ-sMN" secondAttribute="trailing" id="7lH-dC-gxZ"/>
+                            <constraint firstItem="hSx-Lc-a81" firstAttribute="top" secondItem="Ojw-Lv-LT1" secondAttribute="top" id="Eoi-PM-sCN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xab-fJ-sMN"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="hSx-Lc-a81" id="f04-Xy-g6x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vCf-Ql-Yj8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778.39999999999998" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+</document>
